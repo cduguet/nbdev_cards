@@ -8,7 +8,7 @@ from .card import *
 from fastcore.utils import *
 import random
 
-# %% ../01_deck.ipynb 5
+# %% ../01_deck.ipynb 4
 class Deck:
     "A deck of 52 cards, not including jokers"
     def __init__(self): self.cards = [Card(s, r) for s in range(4) for r in range(1,14)]
@@ -16,18 +16,18 @@ class Deck:
     def __len__(self): return len(self.cards)
     def __contains__(self, card): return card in self.cards
     __repr__ = __str__
-    def __shuffle__(self):
+    def shuffle(self):
         "Shuffles the card in this deck"
         random.shuffle(self.cards)
 
-# %% ../01_deck.ipynb 14
+# %% ../01_deck.ipynb 13
 @patch
 def pop(self: Deck,
         idx: int=-1): #The index of the card to remove, defaulting to the last one
     "Remove one card from the deck"
     return self.cards.pop(idx)
 
-# %% ../01_deck.ipynb 18
+# %% ../01_deck.ipynb 17
 @patch
 def remove(self:Deck,
            card:Card): # Card to remove
@@ -35,7 +35,7 @@ def remove(self:Deck,
     self.cards.remove(card)
     
 
-# %% ../01_deck.ipynb 21
+# %% ../01_deck.ipynb 20
 def draw_n(n:int, #number of cards to draw
            replace:bool=True): # whether or not draw with replacement
     "Draw `n` cards with replacement if `replace`"

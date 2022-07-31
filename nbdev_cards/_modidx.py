@@ -40,4 +40,5 @@ d = { 'settings': { 'audience': 'Developers',
             'nbdev_cards.deck': { 'nbdev_cards.deck.Deck': 'https://cduguet.github.io/nbdev-cards/nbdev_cards.deck.html#deck',
                                   'nbdev_cards.deck.Deck.pop': 'https://cduguet.github.io/nbdev-cards/nbdev_cards.deck.html#deck.pop',
                                   'nbdev_cards.deck.Deck.remove': 'https://cduguet.github.io/nbdev-cards/nbdev_cards.deck.html#deck.remove',
+                                  'nbdev_cards.deck.Deck.shuffle': 'https://cduguet.github.io/nbdev-cards/nbdev_cards.deck.html#deck.shuffle',
                                   'nbdev_cards.deck.draw_n': 'https://cduguet.github.io/nbdev-cards/nbdev_cards.deck.html#draw_n'}}}

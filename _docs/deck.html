@@ -234,28 +234,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>When we initially create a deck, all of the cards will be present:</p>
-<div class="cell" data-execution_count="19">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> Deck()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="19">
+<div class="cell-output cell-output-display">
 <pre><code>A,♣️; 2,♣️; 3,♣️; 4,♣️; 5,♣️; 6,♣️; 7,♣️; 8,♣️; 9,♣️; 10,♣️; J,♣️; Q,♣️; K,♣️; A,♦️; 2,♦️; 3,♦️; 4,♦️; 5,♦️; 6,♦️; 7,♦️; 8,♦️; 9,♦️; 10,♦️; J,♦️; Q,♦️; K,♦️; A,♥️; 2,♥️; 3,♥️; 4,♥️; 5,♥️; 6,♥️; 7,♥️; 8,♥️; 9,♥️; 10,♥️; J,♥️; Q,♥️; K,♥️; A,♠️; 2,♠️; 3,♠️; 4,♠️; 5,♠️; 6,♠️; 7,♠️; 8,♠️; 9,♠️; 10,♠️; J,♠️; Q,♠️; K,♠️</code></pre>
 </div>
 </div>
 <p>That should be 52 cards:</p>
-<div class="cell" data-execution_count="20">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>test_eq(<span class="bu">len</span>(d), <span class="dv">52</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>As a reminder, these are the suits that should we defined for a <a href="https://cduguet.github.io/nbdev-cards/nbdev_cards.card.html#card">Card</a></p>
-<div class="cell" data-execution_count="21">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>suits</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="21">
+<div class="cell-output cell-output-display">
 <pre><code>('♣️', '♦️', '♥️', '♠️')</code></pre>
 </div>
 </div>
 <p>We can check if, say, the Ace of Clubs is in the deck:</p>
-<div class="cell" data-execution_count="22">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Card(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">in</span> d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="22">
+<div class="cell-output cell-output-display">
 <pre><code>True</code></pre>
 </div>
 </div>
@@ -295,12 +295,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 </div>
 </div>
-<div class="cell" data-execution_count="24">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>deck <span class="op">=</span> Deck()</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>test_eq(deck.pop(), Card(<span class="dv">3</span>, <span class="dv">13</span>)) <span class="co"># K,♠️</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>There are 51 cards in the deck now</p>
-<div class="cell" data-execution_count="25">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>test_eq(<span class="bu">len</span>(deck), <span class="dv">51</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="3">
@@ -331,7 +331,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 </div>
 </div>
-<div class="cell" data-execution_count="27">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>card23 <span class="op">=</span> Card(<span class="dv">2</span>,<span class="dv">3</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>deck.remove(card23)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -385,9 +385,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 </div>
 </div>
-<div class="cell" data-execution_count="32">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>draw_n(<span class="dv">13</span>, replace<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="32">
+<div class="cell-output cell-output-display">
 <pre><code>[4,♠️,
  Q,♠️,
  7,♣️,
